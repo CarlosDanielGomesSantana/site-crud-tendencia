@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Aluno</title>
+    <link rel="stylesheet" href="../css/students.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Adicionar Aluno</h2>
+        <form id="studentForm">
+            <div class="input-group">
+                <label for="studentName">Nome do Aluno</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="input-group">
+                <label for="schoolName">Nome da Escola</label>
+                <select id="schoolName" name="schoolName" required>
+                    <option value="" disabled selected>Selecione a Escola</option>
+                    <option value="Escola A">Escola A</option>
+                    <option value="Escola B">Escola B</option>
+                    <option value="Escola C">Escola C</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="grade">Série</label>
+                <select id="grade" name="grade" required>
+                    <option value="" disabled selected>Selecione a Série</option>
+                    <option value="1º Ano">1º Ano</option>
+                    <option value="2º Ano">2º Ano</option>
+                    <option value="3º Ano">3º Ano</option>
+                    <option value="4º Ano">4º Ano</option>
+                    <option value="5º Ano">5º Ano</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="shift">Turno</label>
+                <select id="shift" name="shift" required>
+                    <option value="" disabled selected>Selecione o Turno</option>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="class">Turma</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Selecione a Turma</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+            <button type="submit">Adicionar Aluno</button>
+        </form>
+        <p id="success-message" class="success-message"></p>
+    </div>
+    <script src="../js/students.js"></script>
+</body>
+</html>

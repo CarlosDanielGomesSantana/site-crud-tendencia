@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Professor</title>
+    <link rel="stylesheet" href="../css/teachers.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Adicionar Professor</h2>
+        <form id="teacherForm">
+            <div class="input-group">
+                <label for="teacherName">Nome do Professor</label>
+                <input type="text" id="teacherName" name="teacherName" required>
+            </div>
+            <div class="input-group">
+                <label>Escolas</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="school" value="Escola A"> Escola A</label>
+                    <label><input type="checkbox" name="school" value="Escola B"> Escola B</label>
+                    <label><input type="checkbox" name="school" value="Escola C"> Escola C</label>
+                    <label><input type="checkbox" name="school" value="Escola D"> Escola D</label>
+                </div>
+            </div>
+            <button type="submit">Adicionar Professor</button>
+        </form>
+        <p id="success-message" class="success-message"></p>
+    </div>
+    <script src="../js/teachers.js"></script>
+</body>
+</html>
